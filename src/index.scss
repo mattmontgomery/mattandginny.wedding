@@ -47,7 +47,7 @@ p {
   .invitation {
     grid-column: 1;
   }
-  .directions {
+  m {
     grid-column: 2;
     grid-row: 1;
   }
@@ -177,11 +177,8 @@ p {
     display: block;
   }
   input[type="email"] {
-    min-width: 15rem;
+    width: 15rem;
     border: 1px solid $colorInvite;
-    @media (max-device-width: $breakpointMobile) {
-      width: 100%;
-    }
   }
   input[type="submit"] {
     margin-top: 0.5rem;
