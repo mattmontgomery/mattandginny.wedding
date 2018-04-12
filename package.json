@@ -1,0 +1,45 @@
+{
+  "name": "mattandginny.wedding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch --mode development",
+    "build": "webpack --mode production",
+    "build-publish": "yarn build && cp dist/* ../mattmontgomery.github.io/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattmontgomery/mattandginny.wedding.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattmontgomery/mattandginny.wedding/issues"
+  },
+  "homepage": "https://github.com/mattmontgomery/mattandginny.wedding#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.8.3",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-mailchimp-subscribe": "^2.0.1",
+    "react-slick": "^0.23.1",
+    "sass-loader": "^6.0.7",
+    "slick-carousel": "^1.8.1",
+    "style-loader": "^0.20.3",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "webpack": "^4.5.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.0.14"
+  }
+}
