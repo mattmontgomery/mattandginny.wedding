@@ -24,6 +24,9 @@ html {
   font-family: "Heiti SC";
   padding-bottom: 3rem;
 }
+p {
+  font-size: 14pt;
+}
 #main {
   background-image: url("stars.png");
   background-repeat: repeat-x;
@@ -72,6 +75,9 @@ html {
     max-width: 100%;
     margin-left: 0.5rem;
   }
+  @media (max-device-width: $breakpointMobile), (max-width: $breakpointMobile) {
+    margin-left: 0;
+  }
   h3 {
     margin: 0.125rem 0 1rem 0;
     color: $colorInvite;
@@ -113,6 +119,11 @@ html {
       display: block;
       margin-bottom: 2rem;
     }
+    @media (max-device-width: $breakpointMobile),
+      (max-width: $breakpointMobile) {
+      margin-left: 0;
+      padding-left: 0;
+    }
   }
   &-content {
     &-address {
@@ -128,14 +139,20 @@ html {
 .invitation {
   text-align: left;
   display: flex;
+  flex: 1;
   flex-direction: column;
   color: $colorInvite;
   &-content {
     margin: 3rem 0 0;
   }
+  &-logo > img {
+    width: 100%;
+    max-width: 30rem;
+  }
   p {
-    font-size: 14pt;
     margin: 0.5rem 0 0.5rem 0.5rem;
+    font-size: 1.25rem;
+    line-height: 125%;
   }
   img {
     // width: 100%;
@@ -161,8 +178,30 @@ html {
   }
   input[type="email"] {
     min-width: 15rem;
+    border: 1px solid $colorInvite;
+    @media (max-device-width: $breakpointMobile) {
+      width: 100%;
+    }
   }
   input[type="submit"] {
     margin-top: 0.5rem;
+    background-color: $colorInvite;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-width: 0;
+  }
+}
+
+a {
+  color: $colorInvite;
+}
+
+@media (max-device-width: $breakpointMobile) {
+  * {
+    text-size-adjust: 225%;
+    line-height: 225%;
+    // -ms-text-size-adjust: 250%;
+    // -moz-text-size-adjust: 250%;
+    // -webkit-text-size-adjust: 125%;
   }
 }
