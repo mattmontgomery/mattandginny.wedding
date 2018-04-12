@@ -47,7 +47,7 @@ p {
   .invitation {
     grid-column: 1;
   }
-  m {
+  .description {
     grid-column: 2;
     grid-row: 1;
   }
@@ -64,7 +64,7 @@ p {
 .directions {
   display: grid;
   grid-auto-columns: min-content;
-  // grid-template-columns: repeat(3, 33%);
+  grid-column: 2; // grid-template-columns: repeat(3, 33%);
   // grid-template-rows: minmax(max-content, max-content);
   font-weight: 100;
   background-color: transparentize(white, 0.25);
