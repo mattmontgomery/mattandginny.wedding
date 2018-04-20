@@ -1,10 +1,17 @@
 import React from "react";
 import { render } from "react-dom";
+import ImageGallery from "react-image-gallery";
+
 import "./index.scss";
+
 import mattAndGinny from "./mattandginny.svg";
 import invite from "./invite.svg";
 import gift from "./gift.svg";
-import MailchimpSubscribe from "react-mailchimp-subscribe";
+import vertical01 from "./images/vertical01.jpg";
+import vertical02 from "./images/vertical02.jpg";
+import vertical03 from "./images/vertical03.jpg";
+import vertical04 from "./images/vertical04.jpg";
+import vertical05 from "./images/vertical05.jpg";
 
 const Main = () => {
   return (
@@ -13,6 +20,7 @@ const Main = () => {
         <Registry />
         <EmailSignup />
       </Invitation>
+      <Gallery />
       <Directions />
     </div>
   );
@@ -106,7 +114,9 @@ const Directions = () => {
 const EmailSignup = () => {
   return (
     <div id="mc_embed_signup" className="signup">
-      <h4>{"Sign-up for email updates"}</h4>
+      <p>
+        <em>{"Sign-up for email updates"}</em>
+      </p>
       <form
         action="https://instagram.us17.list-manage.com/subscribe/post?u=0f053e3093d7bf7019324ee48&amp;id=2d4882412a"
         method="post"
@@ -116,10 +126,9 @@ const EmailSignup = () => {
         noValidate
       >
         <div>
-          <div>
-            <label htmlFor="mce-EMAIL">{"Email Address"}</label>
+          <p>
             <input type="email" defaultValue="" name="EMAIL" />
-          </div>
+          </p>
           <div style={{ display: "none" }} aria-hidden="true">
             <input
               type="text"
@@ -128,11 +137,35 @@ const EmailSignup = () => {
               value=""
             />
           </div>
-          <div>
+          <p>
             <input type="submit" value="Subscribe" name="subscribe" />
-          </div>
+          </p>
         </div>
       </form>
+    </div>
+  );
+};
+const Gallery = () => {
+  const images = [
+    {
+      original: vertical01
+    },
+    {
+      original: vertical02
+    },
+    {
+      original: vertical03
+    },
+    {
+      original: vertical04
+    },
+    {
+      original: vertical05
+    }
+  ];
+  return (
+    <div className="gallery">
+      <ImageGallery items={images} showThumbnails={false} />
     </div>
   );
 };
