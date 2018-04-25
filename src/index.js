@@ -62,7 +62,7 @@ const Directions = () => {
   return (
     <div className="directions">
       <div className="directions-arizona">
-        <h4>{"April 28, 2018"}</h4>
+        <h4>{"April 28, 2018, 5:30 p.m."}</h4>
         <h3>{"Mesa, Ariz."}</h3>
         <div className="directions-content">
           <p className="directions-content-address">
@@ -76,7 +76,7 @@ const Directions = () => {
         </div>
       </div>
       <div className="directions-slc">
-        <h4>{"May 11, 2018"}</h4>
+        <h4>{"May 11, 2018, 6 p.m."}</h4>
         <h3>{"Salt Lake City"}</h3>
         <div className="directions-content">
           <p className="directions-content-address">

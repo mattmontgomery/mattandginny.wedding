@@ -106,12 +106,6 @@ html {
     padding: 0.5rem;
     color: black;
     min-width: 15rem;
-    &:first-of-type {
-      margin-left: 0;
-    }
-    &:last-of-type {
-      margin-right: 0;
-    }
     @media (max-device-width: $breakpointWide), (max-width: $breakpointWide) {
       margin: 0;
       display: block;
