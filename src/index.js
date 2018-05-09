@@ -85,8 +85,17 @@ const Directions = () => {
             {"255 N. 400 W."}
             <br />
             {"Salt Lake City, UT"}
-          </p>
-          <p>
+            <hr />
+            {
+              "Please park outside of the apartment complex. Parking options include: "
+            }
+            <br />
+            {"- West High School"}
+            <br />
+            {"- Along 400 West"}
+            <br />
+            {"- Along 300 North"}
+            <br />
             <a href="https://goo.gl/maps/PjyYo2kpcD82">{"Directions"}</a>
           </p>
         </div>
